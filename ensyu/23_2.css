@@ -1,26 +1,32 @@
 @charset "UTF-8";
+
 * {
     box-sizing: border-box;
     font-size: 14px;
     color: #333;
 }
+
 body {
     background: #ddd;
 }
+
 form {
     margin: 10px;
     padding: 20px;
     background: #fff;
 }
+
 dl {
     margin: 0;
     font-size: 16px;
 }
+
 .formItem {
     display: flex;
     margin-bottom: 2em;
     align-items: center;
 }
+
 dt {
     flex: 1 1 30px;
     text-align: right;
@@ -28,19 +34,23 @@ dt {
     font-weight: bold;
     color: #00a;
 }
+
 dd {
     flex: 2 1 30px;
     margin-left: 0;
 }
-input[type="text"],textarea {
+
+input[type="text"], textarea {
     border: 1px solid #999;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
 }
+
 .job {
     margin-right: 8em;
 }
+
 select {
     background: #fff;
     width: 100%;
@@ -48,16 +58,40 @@ select {
     font-size: 14px;
     border-radius: 5px;
 }
-/*ここから*/
+
 textarea {
-    height: 8em;
+    height: 5em;
 }
+
+.btn {
+    text-align: center;
+}
+
 input[type="submit"] {
-  background: #ef626c;
-  border: none;
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0;
-  border-radius: 5px;
-  color: #fff;
+    background: #00a;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width : 768px) {
+    .formItem {
+        display: block;
+    }
+
+    dt {
+        text-align: left;
+        margin-bottom: 4px;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    .job {
+        margin-left: 8em;
+    }
 }
